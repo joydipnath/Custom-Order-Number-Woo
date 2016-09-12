@@ -20,18 +20,12 @@ if(!class_exists('woo_commerce_custom_order_number'))
         {
             
 		require_once(sprintf("%s/templates/woocommerce-custom-order.php", dirname(__FILE__)));
-		//require_once(sprintf("%s/css/table_custom_css.css", dirname(__FILE__)));
 			// register actions
                 add_action('admin_init', array(&$this, 'admin_initialization'));
         	add_action('admin_menu', array(&$this, 'add_menu_'));
-	        //require_once(sprintf("%s/settings.php", dirname(__FILE__)));
-
                 // register actions
 		add_filter( 'woocommerce_order_number', 'customize_order' , 1, 2 );
 		add_action( 'wp_insert_post', 'maintain_sequence_order_number' , 10, 2 );
-		 //add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_general_fields' );
-		// Save Fields
-		//add_action( 'woocommerce_process_product_meta', 'woo_add_custom_general_fields_save' );
 		
         } // END public function __construct
     
