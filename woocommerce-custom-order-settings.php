@@ -1,7 +1,7 @@
 <?php
 /*
 * Plugin Name: woo-commerce custom order number adding suffix and prefix
-* Plugin URI : joydipme.com
+* Plugin URI : https://github.com/joydipnath/Custom-Order-Number-Woo
 * Description: A plugin to add Custom suffix and prefix to order number
 * Version    : 1.0
 * Author     : Joydip Nath
