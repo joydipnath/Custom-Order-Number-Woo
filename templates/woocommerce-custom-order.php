@@ -45,6 +45,10 @@ SELECT %d, '_order_number', IF( MAX( CAST( meta_value as UNSIGNED ) ) IS NULL, 1
 				}
 			}
 		}
+		else 
+		{
+		write_log('Something went wrong near line number: '.__LINE__ );
+		}
 	}
 // write_log('Something went wrong near line number: '.__LINE__ );
 ?>
