@@ -1,6 +1,5 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-//include_once(sprintf("%s/css/table_custom_css.css", dirname(__FILE__)));
 
 if (!function_exists('write_log')) {
     function write_log ( $log )  {
