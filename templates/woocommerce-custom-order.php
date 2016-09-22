@@ -20,7 +20,6 @@ function customize_order( $order_number, $post ) {
 	global $wpdb,$post;
 	$c_suffix_A =  get_option('suf_order_A');
 	$c_prefix_A =  get_option('pre_order_A');
-        //$a = "vc";
         $order_number = $c_prefix_A.$order_number.$c_suffix_A ;
 	return $order_number;
 }
